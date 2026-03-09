@@ -13,3 +13,8 @@ profiles/
 *.swo
 Mmesh.prd
 IMPLEMENTATION_PROMPT.md
+.agents/
+.claude/skills/
+.cursor/skills/
+.codex/skills/
+skills-lock.json

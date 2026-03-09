@@ -16,6 +16,7 @@
     "memorymesh": "bun run src/cli.ts",
     "dev": "bun run src/cli.ts",
     "docs:check": "bun run scripts/check-docs.ts",
+    "skills:check": "bun run scripts/check-skills.ts",
     "test": "bun test",
     "bench": "bun run bench/run.ts",
     "proof": "bun run scripts/generate-proof.ts",

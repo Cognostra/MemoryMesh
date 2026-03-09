@@ -5,6 +5,7 @@
 - Install Bun 1.3+
 - Clone the repository
 - Run `bun run docs:check`
+- Run `bun run skills:check`
 - Run `bun test`
 - Run `bun run bench`
 - Run `bun run proof`
@@ -28,8 +29,9 @@ Please avoid broadening scope with:
 1. Read [`README.md`](./README.md).
 2. Read [`docs/architecture.md`](./docs/architecture.md) and [`docs/quickstart.md`](./docs/quickstart.md).
 3. Run `bun run docs:check`.
-4. Run `bun test`.
-5. If you changed retrieval, storage, or UX claims, run `bun run bench` and `bun run proof`.
+4. Run `bun run skills:check` if you changed anything under `skills/`.
+5. Run `bun test`.
+6. If you changed retrieval, storage, or UX claims, run `bun run bench` and `bun run proof`.
 
 ## Pull Request Expectations
 

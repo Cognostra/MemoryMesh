@@ -1,0 +1,7 @@
+interface:
+  display_name: "MemoryMesh Repo Memory"
+  short_description: "Help agents use MemoryMesh in a repo"
+  default_prompt: "Use $memorymesh-repo-memory to set up or use MemoryMesh for this repository."
+
+policy:
+  allow_implicit_invocation: true

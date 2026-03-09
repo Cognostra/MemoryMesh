@@ -7,6 +7,9 @@ cd "$ROOT_DIR"
 echo "[release-check] bun run docs:check"
 bun run docs:check
 
+echo "[release-check] bun run skills:check"
+bun run skills:check
+
 echo "[release-check] bun test"
 bun test
 

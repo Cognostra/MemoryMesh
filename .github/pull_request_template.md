@@ -9,6 +9,7 @@ Explain how this aligns with the current MemoryMesh product promise and scope.
 ## Validation
 
 - [ ] `bun run docs:check`
+- [ ] `bun run skills:check` if `skills/` changed
 - [ ] `bun test`
 - [ ] `bun run bench` if behavior or claims changed
 - [ ] `bun run proof` if public proof artifacts changed

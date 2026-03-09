@@ -42,6 +42,17 @@ bash ./scripts/install.sh --from-file ./dist/memorymesh.tar.gz
 The installer verifies SHA-256 checksums before copying `memorymesh` into `~/.local/bin` by default.
 If you installed from a release, replace `./bin/memorymesh` in the examples below with `memorymesh`.
 
+## Public Agent Skill
+
+MemoryMesh also ships a curated public skill package for the Skills CLI. This skill teaches agents how to use MemoryMesh inside a repository; it does not replace the MemoryMesh binary.
+
+```bash
+npx skills add Cognostra/MemoryMesh --list
+npx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a codex -y
+```
+
+See [Public Skills](./docs/skills.md) for install variants and the distinction between the public skill package and MemoryMesh's internal reviewed skill packs.
+
 You can also seed MemoryMesh from an existing session transcript:
 
 ```bash
@@ -165,6 +176,7 @@ Not supported in v1:
 
 - [Quickstart](./docs/quickstart.md)
 - [Install](./docs/install.md)
+- [Public Skills](./docs/skills.md)
 - [Demo](./docs/demo.md)
 - [Benchmarks](./docs/benchmarks.md)
 - [Integrations](./docs/integrations.md)
