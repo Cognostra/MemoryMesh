@@ -4,6 +4,9 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
+echo "[release-check] bun run docs:check"
+bun run docs:check
+
 echo "[release-check] bun test"
 bun test
 

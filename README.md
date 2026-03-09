@@ -1,6 +1,6 @@
 # MemoryMesh
 
-Give Claude Code, Codex, and Cursor shared repo memory in 5 minutes, fully local.
+Give Claude Code, Codex, and Cursor-style workflows shared repo memory, fully local.
 
 MemoryMesh is a repo-local memory backend for MCP-native coding agents. It bootstraps the instructions and history already in your repository, stores cited local memory in `.memorymesh/`, and serves the same context back to multiple coding agents through one local MCP server.
 
@@ -28,7 +28,7 @@ Works without local models. If you later add local summarization or embedding mo
 From a published release:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gevorian/MemoryMesh/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Cognostra/MemoryMesh/main/scripts/install.sh | bash
 ```
 
 From a local packaged build:
@@ -40,6 +40,7 @@ bash ./scripts/install.sh --from-file ./dist/memorymesh.tar.gz
 ```
 
 The installer verifies SHA-256 checksums before copying `memorymesh` into `~/.local/bin` by default.
+If you installed from a release, replace `./bin/memorymesh` in the examples below with `memorymesh`.
 
 You can also seed MemoryMesh from an existing session transcript:
 

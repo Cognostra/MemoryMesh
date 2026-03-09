@@ -24,10 +24,11 @@ bash ./scripts/install.sh --from-file ./dist/memorymesh.tar.gz
 From a published GitHub release:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gevorian/MemoryMesh/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Cognostra/MemoryMesh/main/scripts/install.sh | bash
 ```
 
 If you publish from a different repo slug, set `MEMORYMESH_REPO=<owner>/<repo>` before running the installer.
+After install, use `memorymesh` instead of `./bin/memorymesh`.
 
 ## Initialize
 

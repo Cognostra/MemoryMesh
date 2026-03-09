@@ -4,9 +4,18 @@
   "private": true,
   "type": "module",
   "description": "Portable local memory for MCP-native coding agents",
+  "homepage": "https://github.com/Cognostra/MemoryMesh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cognostra/MemoryMesh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cognostra/MemoryMesh/issues"
+  },
   "scripts": {
     "memorymesh": "bun run src/cli.ts",
     "dev": "bun run src/cli.ts",
+    "docs:check": "bun run scripts/check-docs.ts",
     "test": "bun test",
     "bench": "bun run bench/run.ts",
     "proof": "bun run scripts/generate-proof.ts",

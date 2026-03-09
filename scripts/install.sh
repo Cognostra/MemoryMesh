@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MEMORYMESH_REPO="${MEMORYMESH_REPO:-gevorian/MemoryMesh}"
+MEMORYMESH_REPO="${MEMORYMESH_REPO:-Cognostra/MemoryMesh}"
 BINDIR="${BINDIR:-$HOME/.local/bin}"
 INSTALL_NAME="${INSTALL_NAME:-memorymesh}"
 VERSION="${MEMORYMESH_VERSION:-latest}"
@@ -99,12 +99,12 @@ install_archive() {
   local checksum_path="$2"
   local temp_dir
   temp_dir="$(mktemp -d)"
-  trap "rm -rf '$temp_dir'" EXIT
 
   verify_checksum "$checksum_path" "$archive_path"
   mkdir -p "$BINDIR"
   tar -xzf "$archive_path" -C "$temp_dir"
   install -m 0755 "$temp_dir/memorymesh" "$BINDIR/$INSTALL_NAME"
+  rm -rf "$temp_dir"
 
   echo "Installed $INSTALL_NAME to $BINDIR/$INSTALL_NAME"
   echo "Next:"
@@ -159,7 +159,6 @@ main() {
   arch="$(detect_arch)"
   asset_base="memorymesh-${os}-${arch}"
   temp_dir="$(mktemp -d)"
-  trap "rm -rf '$temp_dir'" EXIT
 
   if [[ "$VERSION" == "latest" ]]; then
     base_url="https://github.com/$MEMORYMESH_REPO/releases/latest/download"
@@ -173,6 +172,7 @@ main() {
   download_file "$base_url/$asset_base.tar.gz" "$archive_path"
   download_file "$base_url/$asset_base.tar.gz.sha256" "$checksum_path"
   install_archive "$archive_path" "$checksum_path"
+  rm -rf "$temp_dir"
 }
 
 main "$@"

@@ -19,6 +19,9 @@ jobs:
         with:
           bun-version: "1.3.5"
 
+      - name: Check docs
+        run: bun run docs:check
+
       - name: Run tests
         run: bun test
 
