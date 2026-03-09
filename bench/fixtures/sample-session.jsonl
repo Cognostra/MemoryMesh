@@ -1,0 +1,2 @@
+{"timestamp":"2026-03-09T12:00:00Z","sessionId":"sess_sample","role":"assistant","name":"summary","content":"Refactored the storage layer to keep writes local-first.","tags":["refactor","storage"]}
+{"timestamp":"2026-03-09T12:05:00Z","sessionId":"sess_sample","role":"assistant","name":"fix","content":"Fixed MCP config generation to point at the installed binary path.","tags":["mcp","fix"]}

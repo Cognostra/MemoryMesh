@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "generatedFrom": "bun run proof",
+  "fixture": "scripts/generate-proof.ts temporary repo",
+  "results": {
+    "bootstrapReport": {
+      "importedFiles": 6,
+      "importedCommits": 1,
+      "skippedImports": 0
+    },
+    "timingMs": {
+      "init": 18.31,
+      "query": 1.06,
+      "doctor": 0.68
+    },
+    "sampleAnswer": "- Imported README.md: Benchmark Fixture This fixture repository uses Bun, TypeScript, and local-first cited memory. The benchmark exists to measure bootstrap, query speed, and citation quality on a small but realistic repo shape. [README.md]\n- Decision: Proof note: MemoryMesh keeps local repo memory portable and cite: Proof note: MemoryMesh keeps local repo memory portable and cited. [memorymesh://notes]\n- Imported CLAUDE.md: Claude Memory Use concise cited answers and surface repository decisions before changing behavior. [CLAUDE.md]",
+    "citations": [
+      "README.md",
+      "memorymesh://notes",
+      "CLAUDE.md"
+    ],
+    "health": {
+      "ok": true,
+      "counts": {
+        "events": 8,
+        "episodes": 8,
+        "skills": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "repo-promise",
+    "query": "What does this repo promise?",
+    "expectsCitation": "README.md"
+  },
+  {
+    "id": "quickstart",
+    "query": "How do I print the MCP config?",
+    "expectsCitation": "docs/quickstart.md"
+  },
+  {
+    "id": "architecture",
+    "query": "How is MemoryMesh structured?",
+    "expectsCitation": "docs/architecture.md"
+  }
+]

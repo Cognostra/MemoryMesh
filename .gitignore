@@ -1,0 +1,15 @@
+.DS_Store
+.memorymesh/
+coverage/
+tmp/
+dist/
+exports/
+profiles/
+*.log
+.env
+.env.*
+!.env.example
+*.swp
+*.swo
+Mmesh.prd
+IMPLEMENTATION_PROMPT.md

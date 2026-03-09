@@ -1,0 +1,17 @@
+[
+  {
+    "id": "repo-promise",
+    "query": "What does this repo value?",
+    "expectsCitation": "README.md"
+  },
+  {
+    "id": "agent-guidance",
+    "query": "What should an agent know before editing?",
+    "expectsCitation": "AGENTS.md"
+  },
+  {
+    "id": "architecture",
+    "query": "How is storage handled?",
+    "expectsCitation": "docs/architecture.md"
+  }
+]
