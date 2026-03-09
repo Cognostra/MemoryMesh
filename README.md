@@ -1,5 +1,7 @@
 # MemoryMesh
 
+![MemoryMesh](./image.readme.png)
+
 Give Claude Code, Codex, and Cursor-style workflows shared repo memory, fully local.
 
 MemoryMesh is a repo-local memory backend for MCP-native coding agents. It bootstraps the instructions and history already in your repository, stores cited local memory in `.memorymesh/`, and serves the same context back to multiple coding agents through one local MCP server.
