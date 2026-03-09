@@ -48,7 +48,10 @@ MemoryMesh also ships a curated public skill package for the Skills CLI. This sk
 
 ```bash
 npx skills add Cognostra/MemoryMesh --list
+bunx skills add Cognostra/MemoryMesh --list
+
 npx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a codex -y
+bunx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a codex -y
 ```
 
 See [Public Skills](./docs/skills.md) for install variants and the distinction between the public skill package and MemoryMesh's internal reviewed skill packs.

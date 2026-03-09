@@ -8,14 +8,20 @@ List available skills in this repository:
 
 ```bash
 npx skills add Cognostra/MemoryMesh --list
+bunx skills add Cognostra/MemoryMesh --list
 ```
 
 Install this curated skill for a specific agent:
 
 ```bash
 npx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a codex -y
+bunx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a codex -y
+
 npx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a claude-code -y
+bunx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a claude-code -y
+
 npx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a cursor -y
+bunx skills add Cognostra/MemoryMesh --skill memorymesh-repo-memory -a cursor -y
 ```
 
 This installs the skill package, not the MemoryMesh binary.
